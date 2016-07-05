@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>vue-vuex-demo</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<style>
+		/*资源未加载完时的loading*/
+		#loading{position:fixed;left:0;top:0;z-index:9999998;width:100%;height:100%;background:#29282e;}
+		#loading .ctn{position:absolute;left:50%;top:50%;width:90px;height:60px;transform:translate(-50%,-50%);text-align:center;font-size:10px}
+		#loading .ctn > div{display:inline-block;width:6px;height:100%;background-color:#67CF22;-webkit-animation:stretchdelay 1.2s infinite ease-in-out;animation:stretchdelay 1.2s infinite ease-in-out}
+		#loading .ctn .item2{-webkit-animation-delay:-1.1s;animation-delay:-1.1s}
+		#loading .ctn .item3{-webkit-animation-delay:-1.0s;animation-delay:-1.0s}
+		#loading .ctn .item4{-webkit-animation-delay:-0.9s;animation-delay:-0.9s}
+		#loading .ctn .item5{-webkit-animation-delay:-0.8s;animation-delay:-0.8s}
+		@-webkit-keyframes stretchdelay{
+			0%,
+			40%,
+			100%{-webkit-transform:scaleY(0.4)}
+			20%{-webkit-transform:scaleY(1.0)}
+		}
+		@keyframes stretchdelay{
+			0%,
+			40%,
+			100%{transform:scaleY(0.4);-webkit-transform:scaleY(0.4)}
+			20%{transform:scaleY(1.0);-webkit-transform:scaleY(1.0)}
+		}
+		#chrome{ position: fixed; left: 0; top: 0; width: 100%; height: 100%; z-index: 9999999; text-align: center; background: #fff; font-size: 12px; }
+		#chrome .ctn{ position: absolute; top: 50%; width: 100%; margin-top: -120px; color: #7D7D7D; font-weight: bold; }
+		#chrome .ctn .img{ display: block; width: 150px; height: 150px; margin:0 auto; background: center center no-repeat #fff; cursor: pointer; background-size: 100% 100%; margin-bottom: 20px; }
+		#chrome .button { background: #0370ea; background: -moz-linear-gradient(top, #008dfd 0, #0370ea 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #008dfd), color-stop(100%, #0370ea)); background: -webkit-linear-gradient(top, #008dfd 0, #0370ea 100%); background: -o-linear-gradient(top, #008dfd 0, #0370ea 100%); background: -ms-linear-gradient(top, #008dfd 0, #0370ea 100%); background: linear-gradient(top, #008dfd 0, #0370ea 100%); border: 1px solid #076bd2; -moz-border-radius: 3px; border-radius: 3px; color: #fff !important; display: inline-block; font-size: 13px; font-weight: 700; line-height: 1.3; padding: 8px 25px; text-align: center; text-decoration: none !important; text-shadow: 1px 1px 1px #076bd2 }
+		#chrome .button:hover { background: -moz-linear-gradient(top, #008dfd 30%, #0370ea 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #008dfd), color-stop(100%, #0370ea)); background: -webkit-linear-gradient(top, #008dfd 30%, #0370ea 100%); background: -o-linear-gradient(top, #008dfd 30%, #0370ea 100%); background: -ms-linear-gradient(top, #008dfd 30%, #0370ea 100%); background: linear-gradient(top, #008dfd 30%, #0370ea 100%); cursor: pointer }
+	</style>
+	<Base href="">
+</head>
+<body>
+	<!-- 资源未加载完时的loading -->
+	<div id="loading">
+		<div class="ctn">
+			<div class="item1">&nbsp;</div>
+			<div class="item2">&nbsp;</div>
+			<div class="item3">&nbsp;</div>
+			<div class="item4">&nbsp;</div>
+			<div class="item5">&nbsp;</div>
+		</div>
+	</div>
+	<!-- <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet"> -->
+	<link rel="stylesheet" href="style.css?v=1467727403585">
+	<!-- app -->
+	<div id="app"></div>
+	<!-- <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script> -->
+	<script>
+		// if( !window.jQuery ){
+		// 	document.write('\<script src="app.js?v=1467727403585"\>\<\/script\>');
+		// }
+		// document.write('\<script src="app.js?v=1467727403585"\>\<\/script\>');
+	</script>
+	<script src="app-ca435eb92c4418e25ba2.js?1467727403585"></script>
+
+</body> 
+</html>
